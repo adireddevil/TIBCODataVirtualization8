@@ -1,5 +1,5 @@
 <?xml version="1.1" encoding="UTF-8"?>
-<!-- salt:339a5b09-3b1f-4c14-9613-cf3ccbf3c44e -->
+<!-- salt:a4b2bce7-ae62-4503-8688-666305397336 -->
 <metadata name="OracleView1" path="/shared/TIBCOLiveDemo/OracleView1" type="TABLE" subtype="SQL_TABLE" changeToken="0" tableType="VIEW">
   <columns>
     <column name="CUSTOMER_ID" nullable="true">
@@ -40,7 +40,9 @@
     </datatype>
   </dependency>
   <attribute name="SQL" type="STRING">SELECT 
-    *
+    ACME_CUSTOMER.CUSTOMER_ID, 
+    ACME_CUSTOMER.AMOUNT_OWED, 
+    ACME_CUSTOMER.TOTAL_CREDIT
 FROM      
     /shared/TIBCOLiveDemo/DS_ORACLE/ADITYA/ACME_CUSTOMER ACME_CUSTOMER</attribute>
   <attribute name="creationDate" type="LONG">1547800083906</attribute>
@@ -50,7 +52,7 @@ FROM
   <attribute name="explicitly.designed" type="BOOLEAN">false</attribute>
   <attribute name="impactLevel" type="INTEGER">0</attribute>
   <attribute name="impactMessage" type="NULL"/>
-  <attribute name="lastModifiedDate" type="LONG">1547800327820</attribute>
+  <attribute name="lastModifiedDate" type="LONG">1547800684870</attribute>
   <attribute name="lastModifiedUserDomain" type="STRING">composite</attribute>
   <attribute name="lastModifiedUserId" type="INTEGER">-1973</attribute>
   <attribute name="lastModifiedUserName" type="STRING">admin</attribute>
@@ -58,9 +60,35 @@ FROM
 VQBTAFQATwBNAEUAUgML/////wMKAABGbAMM/////wsRAAUABgBzAGgAYQByAGUAZAANAFQASQBC
 AEMATwBMAGkAdgBlAEQAZQBtAG8ACQBEAFMAXwBPAFIAQQBDAEwARQAGAEEARABJAFQAWQBBAA0A
 QQBDAE0ARQBfAEMAVQBTAFQATwBNAEUAUv//AwUAAAAACAIQMQYB//8BAgEBBgABAwABBAABBQAD
-BwAAAAAHCQAAAAEAAAAACQoAAAABEEEGAQABACoGAgAABgP//wYE//8DCv////8GBQAABgYAAAYH
-AAAGCAAA/////wkGAAAAARCCAwoAAAE0AwsAAACgAwwAAADIAw0AAABS//8IAxBxAwEAAAALAwIA
-AAAyCQMAAAImEHQDBgAAAAD//xByBgT/////EHP//xB1AQcB//8QeAYL/////xB3Awr///////8Q
+BwAAAAAHCQAAAAEAAAAACQoAAAADEEEGAQALAEMAVQBTAFQATwBNAEUAUgBfAEkARAYCAAAGA///
+BgT//wMK/////wgMEBsGAgAIAFYAQQBSAEMASABBAFIAMgYDAAwAVgBBAFIAQwBIAEEAUgAyACgA
+NAAwACkDKwAAAA8DEgAAAAEEBAAAAAAAAAAoARMB//8DCwAAAAD//xBBBgEACwBBAE0ATwBVAE4A
+VABfAE8AVwBFAEQGAgAABgP//wYE//8DCv////8IDBAXBgIABgBOAFUATQBCAEUAUgYDAAwATgBV
+AE0AQgBFAFIAKAAxADAALAAyACkDKwAAAA8DEgAAAAEDDgAAAAoDEAAAAAL//wMLAAAAAP//EEEG
+AQAMAFQATwBUAEEATABfAEMAUgBFAEQASQBUBgIAAAYD//8GBP//Awr/////CAwQFwYCAAYATgBV
+AE0AQgBFAFIGAwAMAE4AVQBNAEIARQBSACgAMQAwACwAMgApAysAAAAPAxIAAAABAw4AAAAKAxAA
+AAAC//8DCwAAAAD/////CQYAAAABEIIDCgAAATQDCwAAAKADDAAAAQUDDQAAAIz//wgDEHEDAQAA
+AAsDAgAAADIJAwAAAiYQdAMGAAAAAP//EHIGBP////8QcwMFAAAAAP//EHUBBwH//xB4Bgv/////
+EHcDCv///////xB5Bgz/////EHb//xB2//8Qdv//EHb//xB0AwYAAAAB//8QcgYE/////xBzAwUA
+AAAA//8QdQEHAf//EHgGC/////8QdwMK////////EHkGDP////8Qdv//EHb//xB2//8Qdv//EHQD
+BgAAAAL//xByBgT/////EHMDBQAAAAD//xB1AQcB//8QeAYL/////xB3Awr///////8QeQYM////
+/xB2//8Qdv//EHb//xB2//8QdP//EHIGBP////8Qc///EHUBBwD//xB4Bgv/////EHcDCv//////
+/xB5Bgz/////EHb//xB2//8Qdv//EHb//xB0//8QcgYE/////xBz//8QdQEHAP//EHgGC/////8Q
+dwMK////////EHkGDP////8Qdv//EHb//xB2//8Qdv//EHT//xByBgT/////EHP//xB1AQcA//8Q
+eAYL/////xB3Awr///////8QeQYM/////xB2//8Qdv//EHb//xB2//8QdP//EHIGBP////8Qc///
+EHUBBwD//xB4Bgv/////EHcDCv///////xB5Bgz/////EHb//xB2//8Qdv//EHb//xB0//8QcgYE
+/////xBz//8QdQEHAP//EHgGC/////8QdwMK////////EHkGDP////8Qdv//EHb//xB2//8Qdv//
+EHT//xByBgT/////EHP//xB1AQcA//8QeAYL/////xB3Awr///////8QeQYM/////xB2//8Qdv//
+EHb//xB2//8QdP//EHIGBP////8Qc///EHUBBwD//xB4Bgv/////EHcDCv///////xB5Bgz/////
+EHb//xB2//8Qdv//EHb//xB0//8QcgYE/////xBz//8QdQEHAP//EHgGC/////8QdwMK////////
+EHkGDP////8Qdv//EHb//xB2//8Qdv//EHT//xByBgT/////EHP//xB1AQcA//8QeAYL/////xB3
+Awr///////8QeQYM/////xB2//8Qdv//EHb//xB2//8QdP//EHIGBP////8Qc///EHUBBwD//xB4
+Bgv/////EHcDCv///////xB5Bgz/////EHb//xB2//8Qdv//EHb//xB0//8QcgYE/////xBz//8Q
+dQEHAP//EHgGC/////8QdwMK////////EHkGDP////8Qdv//EHb//xB2//8Qdv//EHT//xByBgT/
+////EHP//xB1AQcA//8QeAYL/////xB3Awr///////8QeQYM/////xB2//8Qdv//EHb//xB2//8Q
+dP//EHIGBP////8Qc///EHUBBwD//xB4Bgv/////EHcDCv///////xB5Bgz/////EHb//xB2//8Q
+dv//EHb//xB0//8QcgYE/////xBz//8QdQEHAP//EHgGC/////8QdwMK////////EHkGDP////8Q
+dv//EHb//xB2//8Qdv//EHT//xByBgT/////EHP//xB1AQcA//8QeAYL/////xB3Awr///////8Q
 eQYM/////xB2//8Qdv//EHb//xB2//8QdP//EHIGBP////8Qc///EHUBBwD//xB4Bgv/////EHcD
 Cv///////xB5Bgz/////EHb//xB2//8Qdv//EHb//xB0//8QcgYE/////xBz//8QdQEHAP//EHgG
 C/////8QdwMK////////EHkGDP////8Qdv//EHb//xB2//8Qdv//EHT//xByBgT/////EHP//xB1
@@ -97,26 +125,6 @@ dv//EHb//xB2//8QdP//EHIGBP////8Qc///EHUBBwD//xB4Bgv/////EHcDCv///////xB5Bgz/
 ////EHkGDP////8Qdv//EHb//xB2//8Qdv//EHT//xByBgT/////EHP//xB1AQcA//8QeAYL////
 /xB3Awr///////8QeQYM/////xB2//8Qdv//EHb//xB2//8QdP//EHIGBP////8Qc///EHUBBwD/
 /xB4Bgv/////EHcDCv///////xB5Bgz/////EHb//xB2//8Qdv//EHb//xB0//8QcgYE/////xBz
-//8QdQEHAP//EHgGC/////8QdwMK////////EHkGDP////8Qdv//EHb//xB2//8Qdv//EHT//xBy
-BgT/////EHP//xB1AQcA//8QeAYL/////xB3Awr///////8QeQYM/////xB2//8Qdv//EHb//xB2
-//8QdP//EHIGBP////8Qc///EHUBBwD//xB4Bgv/////EHcDCv///////xB5Bgz/////EHb//xB2
-//8Qdv//EHb//xB0//8QcgYE/////xBz//8QdQEHAP//EHgGC/////8QdwMK////////EHkGDP//
-//8Qdv//EHb//xB2//8Qdv//EHT//xByBgT/////EHP//xB1AQcA//8QeAYL/////xB3Awr/////
-//8QeQYM/////xB2//8Qdv//EHb//xB2//8QdP//EHIGBP////8Qc///EHUBBwD//xB4Bgv/////
-EHcDCv///////xB5Bgz/////EHb//xB2//8Qdv//EHb//xB0//8QcgYE/////xBz//8QdQEHAP//
-EHgGC/////8QdwMK////////EHkGDP////8Qdv//EHb//xB2//8Qdv//EHT//xByBgT/////EHP/
-/xB1AQcA//8QeAYL/////xB3Awr///////8QeQYM/////xB2//8Qdv//EHb//xB2//8QdP//EHIG
-BP////8Qc///EHUBBwD//xB4Bgv/////EHcDCv///////xB5Bgz/////EHb//xB2//8Qdv//EHb/
-/xB0//8QcgYE/////xBz//8QdQEHAP//EHgGC/////8QdwMK////////EHkGDP////8Qdv//EHb/
-/xB2//8Qdv//EHT//xByBgT/////EHP//xB1AQcA//8QeAYL/////xB3Awr///////8QeQYM////
-/xB2//8Qdv//EHb//xB2//8QdP//EHIGBP////8Qc///EHUBBwD//xB4Bgv/////EHcDCv//////
-/xB5Bgz/////EHb//xB2//8Qdv//EHb//xB0//8QcgYE/////xBz//8QdQEHAP//EHgGC/////8Q
-dwMK////////EHkGDP////8Qdv//EHb//xB2//8Qdv//EHT//xByBgT/////EHP//xB1AQcA//8Q
-eAYL/////xB3Awr///////8QeQYM/////xB2//8Qdv//EHb//xB2//8QdP//EHIGBP////8Qc///
-EHUBBwD//xB4Bgv/////EHcDCv///////xB5Bgz/////EHb//xB2//8Qdv//EHb//xB0//8QcgYE
-/////xBz//8QdQEHAP//EHgGC/////8QdwMK////////EHkGDP////8Qdv//EHb//xB2//8Qdv//
-EHT//xByBgT/////EHP//xB1AQcA//8QeAYL/////xB3Awr///////8QeQYM/////xB2//8Qdv//
-EHb//xB2//8QdP//EHIGBP////8Qc///EHUBBwD//xB4Bgv/////EHcDCv///////xB5Bgz/////
-EHb//xB2//8Qdv//EHb///////8=</attribute>
+//8QdQEHAP//EHgGC/////8QdwMK////////EHkGDP////8Qdv//EHb//xB2//8Qdv///////w==</attribute>
   <attribute name="resourceModifiedDateOnSourceCISSite" type="LONG">1547800083906</attribute>
 </metadata>
